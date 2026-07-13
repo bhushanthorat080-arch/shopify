@@ -424,6 +424,12 @@ hr.divider {
   overflow-x: auto;
   padding-bottom: 4px;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.product-gallery-thumbnails::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
 .gallery-thumb-btn {
