@@ -53,12 +53,6 @@ class Header {
           <span class="logo-accent">Smart</span>Talk
         </a>
 
-        <button class="mobile-menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
         <nav class="main-nav">
           <a href="/" class="nav-link ${currentPath === '/' ? 'active' : ''}">Intelligence Book</a>
           <a href="/search" class="nav-link ${currentPath === '/search' ? 'active' : ''}">Search Catalog</a>
@@ -75,6 +69,13 @@ class Header {
           <button id="header-cart-toggle" class="header-cart-btn" aria-label="Open cart">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
             ${cartCount > 0 ? `<span class="cart-badge">${cartCount}</span>` : ''}
+          </button>
+
+          <!-- Mobile Menu Toggler (Aligned on far right) -->
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
       </div>
